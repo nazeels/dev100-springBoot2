@@ -2,6 +2,7 @@ package com.example.amal.controller;
 
 
 import com.example.amal.service.EmployeeService;
+import com.example.amal.service.IEmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

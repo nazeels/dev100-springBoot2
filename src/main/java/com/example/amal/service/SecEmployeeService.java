@@ -6,9 +6,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-//@Service
-public class EmployeeService implements IEmployeeService {
-    List<String> emps = new ArrayList<>(Arrays.asList("Nazeel", "Amal"));
+@Service
+public class SecEmployeeService implements IEmployeeService{
+
+    List<String> emps = new ArrayList<>(Arrays.asList("Mr. Nazeel", "Mr. Amal"));
 
     @Override
     public List<String> getEmployees() {
@@ -18,7 +19,7 @@ public class EmployeeService implements IEmployeeService {
     @Override
     public List<String> addEmployee(String name){
         System.out.println("addEmployees " + name  );
-        emps.add(name);
+        emps.add("Mr. " + name);
         return emps;
     }
 }
